@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AddController {
 
     @RequestMapping("/add") //name of action in the form in index.jsp
-   public void show(){
-       System.out.println("in the add class function show");
+   public String show(){
+        return "show.jsp";
    }
 }
