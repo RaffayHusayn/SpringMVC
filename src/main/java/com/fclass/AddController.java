@@ -24,7 +24,7 @@ public class AddController {
         int add = addService.add(num1, num2);// in complicated applications, controllers don't do processing so we are just
         //following that
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("show.jsp"); // this is the name of the view
+        mv.setViewName("show"); // this is the name of the view
         mv.addObject("addResult", add); // this is the
         return mv;
    }
