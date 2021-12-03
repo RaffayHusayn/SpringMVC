@@ -15,7 +15,7 @@
 <%--    result is : <%= request.getAttribute("addResult")%>   this is using jsp tags--%>
 <%--we can also use EL which is expression language as shown below --%>
 <%--ALSO ADD THE TAG isELIgnored = "false"--%>
-the result of addition is : ${addResult}
+the result of addition is still runningadasf: ${addResult}
 
 </body>
 </html>

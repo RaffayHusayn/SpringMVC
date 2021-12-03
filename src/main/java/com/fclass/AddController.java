@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class AddController {
 
-    @RequestMapping("/add") //name of action in the form in index.jsp
+    @RequestMapping("/add") //name of action in the form in index.jsp, doesn't depend on the name of class or method or anything other than mapping
    public ModelAndView show(HttpServletRequest request, HttpServletResponse response){
         int num1 = Integer.parseInt(request.getParameter("num1")); //works with both get and post method
         int num2 = Integer.parseInt(request.getParameter("num2")); //works with both get and post method
