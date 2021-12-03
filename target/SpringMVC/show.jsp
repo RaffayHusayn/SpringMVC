@@ -11,6 +11,6 @@
     <title>Show page</title>
 </head>
 <body>
-  this is called from AddController
+    result is : <%= request.getAttribute("addResult")%>
 </body>
 </html>
