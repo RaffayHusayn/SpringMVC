@@ -3,12 +3,17 @@ package com.fclass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+@EnableWebMvc
 @Configuration
 @ComponentScan({"com.fclass"})
-public class FrontControllerConfig {
-    @Bean//just like the Java Configuration of spring Class in Spring Core
+public class FrontControllerConfig implements  WebMvcConfigurer {
+
+  @Bean//just like the Java Configuration of spring Class in Spring Core
     public InternalResourceViewResolver viewResolver(){
         InternalResourceViewResolver vr = new InternalResourceViewResolver();
         //webapp is the root directory so only a / is fine but if we move jsp files to a folder we have to mention here
